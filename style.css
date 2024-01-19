@@ -62,7 +62,7 @@ li a:hover {
   position: relative;
   text-align: center;
 }
-
+ .navmenu{display: none;}
 .main-headings {
   position: absolute;
   top: 7rem;
@@ -325,8 +325,38 @@ hr {
   }
 }
 @media (max-width:600px) {
+  nav ul {display: none;}
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  
+   
+  }
+  .navmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    
+  }
+  .navmenu .lines{
+    width: 50px;height: 5px;
+    background: #ffffff;
+  }
   .img-2 {
     width: 250px;
     height: 250px;}
-  
+    #our-story .title {
+      transform: translateX(0px);
+  }
+  .title-three {
+    font-size: 3.5rem;
+    margin-left: 7rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+hr{
+  width: 100%;
+}
 }
